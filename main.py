@@ -628,9 +628,10 @@ def draw_labels(cv):
     # 4. Mt. Snore -- the volcano that sleeps through everything
     dot(505, 330)
     draw_label(cv, 505, 190, ["MT. SNORE"], 28, seed=75)
-    # 5. Gull Bluff -- east cliffs
+    # 5. Gull Bluff -- east cliffs (label nudged right so the G clears
+    # the coastline instead of sitting on it)
     dot(738, 412)
-    draw_label(cv, 860, 348, ["GULL BLUFF"], 27, seed=76)
+    draw_label(cv, 868, 348, ["GULL BLUFF"], 27, seed=76)
     # 6. Rum Barrel Bay -- north bay, barrel washed up on the beach
     dot(640, 300)
     draw_label(cv, 670, 240, ["RUM BARREL BAY"], 26, seed=77)
@@ -641,9 +642,10 @@ def draw_labels(cv):
     draw_label(cv, 620, 510, ["THE WIDOW'S", "DOWRY"], 28, RED, seed=78)
     draw_text(cv, 620, 592, "300 DOUBLOONS - MABEL'S - DO RETURN", 15,
               INK_SOFT, seed=79)
-    # 8. Mermaid's Rock -- offshore east
+    # 8. Mermaid's Rock -- offshore east; leader line angled to clear the
+    # "DO RETURN" line above the label
     dot(898, 490)
-    cv.line(872, 612, 895, 508, 1.6, INK_SOFT, alpha=0.8)
+    cv.line(866, 614, 892, 508, 1.6, INK_SOFT, alpha=0.8)
     draw_label(cv, 872, 620, ["MERMAID'S ROCK"], 24, seed=80)
     # 9. The Kraken -- offshore south-east
     dot(880, 762)
